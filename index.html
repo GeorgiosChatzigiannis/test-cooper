@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c1528">
+<title>3K Lab — Προετοιμασία 3.000 μ.</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#18253d;--muted:#61728c;--line:#e2e8f2;--blue:#2563eb;--accent:#12b2a1;--warm:#fef6e4;--warmtext:#7b5019;--shadow:0 10px 30px rgba(17,32,63,.05)}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.5}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.hero{background:linear-gradient(120deg,#07152f 10%,#163f6d 78%,#126e82);color:#fff;padding:22px 0 38px}.hero-inner{display:grid;gap:28px}.logo{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800;letter-spacing:.08em}.logo small{display:block;font-size:9px;font-weight:500;opacity:.65;letter-spacing:.14em}.logomark{padding:9px;background:#08bcb4;color:#072d37;border-radius:10px;font-weight:900}.hero-main h1{font-size:clamp(31px,4.5vw,57px);line-height:1.1;letter-spacing:-.045em;margin:12px 0}.hero-main h1 em{font-style:normal;color:#78f1d8}.hero-main p{max-width:770px;color:#d2e2f3;margin:0}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.17em;color:#86eadf}.eyebrow.muted{color:#2685a6}.hero-stats{display:flex;gap:28px;flex-wrap:wrap}.hero-stats>div{border-left:1px solid #4b7b94;padding-left:16px;min-width:120px}.hero-stats strong{display:block;font-size:27px;line-height:1.3;letter-spacing:-.025em}.hero-stats strong span{font-size:14px;font-weight:500}.hero-stats small{font-size:12px;opacity:.7}main{padding:25px 0 42px}.notice{border-radius:13px;padding:14px 17px;font-size:13px}.notice-warm{background:var(--warm);color:var(--warmtext);border:1px solid #f7deb4;margin-bottom:20px}.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:26px;margin:0 0 20px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:19px}.section-head h2{font-size:24px;letter-spacing:-.035em;margin:4px 0 3px}.section-head p{margin:0;font-size:13px;color:var(--muted);max-width:730px}.chip{font-size:10px;letter-spacing:.05em;font-weight:750;background:#e7f9f8;color:#087f7a;padding:8px 10px;border-radius:7px;white-space:nowrap}.tabs{display:flex;gap:6px;background:#f1f4fa;width:fit-content;padding:5px;border-radius:11px}.tab{background:transparent;border:0;padding:11px 15px;border-radius:8px;color:#576b86;font-weight:700;cursor:pointer}.tab.active{background:#fff;color:#123c86;box-shadow:0 2px 8px #1f32501a}.source-fields{display:flex;align-items:end;flex-wrap:wrap;gap:18px;margin:21px 0 16px}.source-fields.hidden{display:none}.source-fields label,.test-edit label{font-size:12px;font-weight:700;display:grid;gap:6px;min-width:220px}.source-fields input,.source-fields select,.test-edit input,.toolbar select{font:inherit;color:var(--ink);border:1px solid #cdd7e5;background:#fff;border-radius:9px;padding:11px 12px;min-height:42px}.source-fields input{width:240px}.field-note{color:var(--muted);font-size:12px;max-width:380px}.action-line{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.btn{font:inherit;font-size:12px;font-weight:750;cursor:pointer;border-radius:10px;padding:11px 14px;border:1px solid transparent}.btn.primary{background:#1664d9;color:white}.btn.secondary{background:white;color:#24508e;border:1px solid #cbd9e9}.btn.link-button{background:transparent;color:#74849c}.btn:hover{filter:brightness(.965)}.message{min-height:20px;font-size:12px;margin:10px 0 0;color:#b24d35}.message.ok{color:#087c71}.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:19px}.metric{border-radius:11px;border:1px solid #dde7f0;background:#f8faff;padding:16px}.metric span{display:block;color:#6b7b95;font-size:11px}.metric strong{display:block;font-size:26px;letter-spacing:-.025em;margin-top:3px}.table-scroller{width:100%;overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:540px}thead{background:#f5f8fd}th{text-align:left;color:#64738a;font-size:11px;letter-spacing:.04em;text-transform:uppercase}th,td{padding:12px 13px;border-bottom:1px solid #e9eef5}td{font-size:13px}td strong{font-weight:700}.tag{display:inline-block;border-radius:7px;font-size:10px;font-weight:800;padding:3px 8px;background:#e8effe;color:#2258ac}.tag.speed{background:#ffece8;color:#b84724}.tag.threshold{background:#dff8ee;color:#117654}.tag.easy{background:#e8f1fa;color:#4b6e93}.tag.test{background:#fff0cb;color:#895d1e}.method{font-size:12px;color:#687891;margin-top:13px}.checkpoint-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px}.checkpoint{border:1px solid var(--line);padding:14px;border-radius:12px}.checkpoint h3{margin:0 0 4px;font-size:14px}.checkpoint .subtitle{font-size:11px;color:var(--muted);margin-bottom:12px}.test-edit{display:flex;align-items:end;gap:8px;flex-wrap:wrap}.test-edit label{min-width:130px;flex:1}.test-edit input{min-width:0;width:100%;padding:8px;min-height:38px}.test-edit button{min-height:38px}.setmark{margin-top:6px;font-size:11px;color:#0b8374}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:19px;margin-bottom:20px}.toolbar-select{font-size:12px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:9px}.toolbar-select select{min-width:255px}.square-btn{border:1px solid #cbd9e9;background:#fff;border-radius:9px;font-size:25px;cursor:pointer;min-width:41px;height:42px;color:#37649c}.checkline{margin-left:auto;font-size:12px;cursor:pointer;color:#61718a}.right-actions{display:flex;gap:8px;flex-wrap:wrap}.week-block{margin-bottom:25px}.week-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:#f2f7fc;padding:14px 16px;border:1px solid #dce7f4;border-radius:12px;margin-bottom:8px}.week-top h3{margin:0 0 3px;font-size:18px}.week-top small{color:#71819a}.volume-pill{display:flex;gap:9px;align-items:baseline}.volume-pill strong{font-size:24px;letter-spacing:-.04em}.volume-pill span{font-size:11px;color:#6a7990}.status{border-radius:7px;background:#e6f7eb;color:#167346;font-weight:700;padding:4px 7px;font-size:10px}.status.warn{background:#fff0d8;color:#9a6213}.week-notes{font-size:12px;color:#667b95;padding:5px 1px 11px}.days{display:grid;gap:7px}.day{display:grid;grid-template-columns:112px minmax(0,1fr) 83px;align-items:start;border:1px solid #e4e9f2;background:#fff;border-radius:12px;overflow:hidden}.day-date{padding:13px 11px;background:#fafcff;height:100%;border-right:1px solid #edf0f6}.day-date strong{display:block;font-size:12px}.day-date small{display:block;color:#75849b;font-size:11px}.day-sessions{padding:8px 12px}.session{padding:6px 0;border-bottom:1px dashed #ebeff6;display:flex;align-items:flex-start;justify-content:space-between;gap:13px}.session:last-child{border-bottom:0}.session-body{min-width:0;flex:1}.session-line{font-size:13px;font-weight:750}.session-sub{font-size:11px;color:#74849a;margin-top:2px;line-height:1.55}.session-sub b{font-weight:700;color:#475c75}.session-line .tag{vertical-align:1px;margin-right:5px}.session-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:flex-end}.session-controls button{border:1px solid #d6e1ee;background:#f8faff;color:#23415c;cursor:pointer;border-radius:6px;min-width:25px;min-height:25px}.session-controls button:disabled{opacity:.4;cursor:not-allowed}.session-controls .reps{font-size:11px;color:#4b6a8a}.done{font-size:10px;color:#47647d;display:flex;align-items:center;gap:3px;cursor:pointer}.day-km{padding:12px 7px;text-align:center;white-space:nowrap;font-size:12px;font-weight:750}.day-km small{display:block;color:#7a8da5;font-size:10px;font-weight:500}.day-done{background:#f2fbf6;border-color:#cee9d9}.weekly-breakdown{padding:10px 15px;color:#61748e;font-size:11px;display:flex;gap:16px;flex-wrap:wrap}.legend{border-top:1px solid var(--line);padding-top:16px;margin-top:15px;color:#66768c;font-size:12px}footer{color:#73829a;font-size:11px;text-align:center;padding-top:8px}a{color:#2563eb}.muted-dash{color:#9aa6b8}.plan-panel{min-height:600px}@media(max-width:700px){.wrap{width:min(100% - 22px,1160px)}.hero{padding-bottom:28px}.hero-inner{gap:20px}.panel{padding:16px;border-radius:13px}.section-head{display:block}.chip{display:none}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.tab{font-size:11px;padding:10px}.tabs{width:100%}.tab{flex:1}.day{grid-template-columns:78px minmax(0,1fr);position:relative}.day-date{padding:11px 7px}.day-sessions{padding:7px 8px}.day-km{grid-column:2;text-align:left;padding:0 8px 9px}.day-km small{display:inline;margin-left:5px}.session{display:block}.session-controls{justify-content:flex-start;margin:4px 0 0}.toolbar-select select{min-width:0;width:160px}.checkline{margin-left:0}.hero-stats{gap:10px}.hero-stats>div{min-width:102px}.metric{padding:12px}.metric strong{font-size:22px}}@media print{body{background:#fff}.hero{background:#fff;color:#000;padding:5px 0}.hero-main h1{font-size:25px}.hero-main h1 em{color:#000}.hero-stats,.notice,.tabs,.source-fields,.action-line,.toolbar,.right-actions,.checkpoint-list,.legend,.method,footer{display:none!important}.panel{box-shadow:none;border:0;padding:0;margin:10px 0}.plan-panel{min-height:0}.week-block{page-break-inside:avoid}.day{break-inside:avoid}.week-top{background:#eee;break-after:avoid}.days{gap:2px}.day-date,.day-sessions,.day-km{padding:5px}.section-head{margin:0 0 8px}.section-head h2{font-size:17px}.results,.input-panel,#zones-table{display:none}.session-controls{display:none}.week-block:not(.print-visible){display:none}}
+
+.target-picker{display:inline-flex;align-items:center;gap:4px;flex-wrap:wrap}.target-picker input{width:58px;height:26px;font-size:12px;color:#1e4a83;background:white;border:1px solid #c6d6e9;border-radius:6px;padding:2px 5px;font-weight:700}.target-picker input:focus{outline:2px solid #a7c5ec}.week-top .volume-pill{gap:8px}
+
+.runtime-status{margin:16px 0;padding:13px 16px;border:1px solid #cbd5e1;border-radius:12px;background:#f8fafc;color:#334155;font-size:14px;line-height:1.5}.runtime-status.running{background:#f0fdf4;border-color:#86efac;color:#166534}
+
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap hero-inner">
+  <div class="logo"><span class="logomark">3K</span><span>RUN LAB <small>ROAD RACING PLANNER</small></span></div>
+  <div class="hero-main"><div class="eyebrow">1 ΔΕΚΕΜΒΡΙΟΥ 2026 — 9 ΜΑΪΟΥ 2027</div><h1>Ο δρόμος για το <em>sub 10'</em></h1><p>23 εβδομάδες για 3.000 μ. · προσαρμογή ρυθμών από Cooper ή πρόσφατη επίδοση · δρομικές προπονήσεις σε αποστάσεις.</p></div>
+  <div class="hero-stats"><div><strong>3.000<span> μ.</span></strong><small>Αγώνας-στόχος</small></div><div><strong>9:59</strong><small>Επιθυμητή επίδοση</small></div><div><strong>120<span> χλμ.</span></strong><small>Ανώτατο εβδομαδιαίο όριο</small></div></div>
+ </div>
+</header>
+<main class="wrap">
+ <div class="runtime-status" id="js-status" role="status" aria-live="polite">Η εφαρμογή δεν έχει ξεκινήσει. Αν την ανοίγεις μέσα από προεπισκόπηση αρχείου στο iPhone, ο JavaScript κώδικας μπορεί να μην εκτελείται. Χρειάζεται κανονικός browser ή δημοσίευση σε GitHub Pages.</div>
+ <noscript><div class="notice notice-warm">Η JavaScript είναι απενεργοποιημένη. Χωρίς αυτήν δεν μπορούν να εμφανιστούν τα δυναμικά προγράμματα και οι ρυθμοί.</div></noscript>
+ <div class="notice notice-warm"><strong>Σημαντικό για την επιστροφή:</strong> Ο αρχικός σχεδιασμός ανεβαίνει προοδευτικά προς 70–120 χλμ./εβδομάδα, δεν ξεκινά υποχρεωτικά από 70 χλμ. μετά από αποχή. Όλες οι διπλές και οι έντονες προπονήσεις είναι υπό προϋποθέσεις. Ενόχληση ή ασυνήθιστη κόπωση σημαίνει λιγότερη επιβάρυνση, όχι περισσότερη.</div>
+ <section class="panel input-panel" aria-labelledby="calc-title">
+  <div class="section-head"><div><div class="eyebrow muted">ΒΗΜΑ 01</div><h2 id="calc-title">Ο υπολογιστής ρυθμών σου</h2><p>Ίδια μαθηματική βάση με την παλιά εφαρμογή Cooper: Riegel 1,06 και οι αρχικοί τύποι των ζωνών.</p></div><span class="chip">COOPER / RIEGEL</span></div>
+  <div class="tabs" role="tablist" aria-label="Πηγή ρυθμών"><button id="mode-cooper" class="tab active" role="tab" aria-selected="true">Τεστ Cooper · 12 λεπτά</button><button id="mode-race" class="tab" role="tab" aria-selected="false">Πρόσφατη αγωνιστική επίδοση</button></div>
+  <div class="source-fields" id="cooper-fields"><label>Απόσταση σε 12 λεπτά (μέτρα)<input id="cooper-meters" type="number" min="1000" max="5000" step="1" placeholder="π.χ. 2800" inputmode="numeric"></label><div class="field-note">Τρέχεις για 12′ και καταχωρείς τα πραγματικά μέτρα. Η τιμή δεν είναι επίδοση 3.000 μ.</div></div>
+  <div class="source-fields hidden" id="race-fields"><label>Απόσταση αγώνα<select id="race-distance"><option value="800">800 μ.</option><option value="1000">1.000 μ.</option><option value="1500">1.500 μ.</option><option value="2000">2.000 μ.</option><option value="3000" selected>3.000 μ.</option><option value="4000">4.000 μ.</option><option value="5000">5.000 μ.</option><option value="10000">10.000 μ.</option><option value="21097.5">Ημιμαραθώνιος</option><option value="42195">Μαραθώνιος</option></select></label><label>Επίσημος χρόνος (mm:ss ή hh:mm:ss)<input id="race-time" type="text" placeholder="π.χ. 12:00" inputmode="text"></label></div>
+  <div class="action-line"><button id="save-base" class="btn primary">Υπολογισμός & αποθήκευση αρχικής επίδοσης</button><button id="demo" class="btn secondary">Δοκιμή με 2.800 μ.</button><button id="clear-data" class="btn link-button">Καθαρισμός δεδομένων</button></div><div id="input-msg" class="message" aria-live="polite"></div>
+  <div class="results" id="results"><div class="metric"><span>Εκτίμηση 3.000 μ.</span><strong id="est-3k">—</strong></div><div class="metric"><span>Εκτίμηση 5.000 μ.</span><strong id="est-5k">—</strong></div><div class="metric"><span>VDOT (παλιός τύπος)</span><strong id="est-vdot">—</strong></div><div class="metric"><span>Αγώνας-στόχος</span><strong>9:59</strong></div></div>
+ </section>
+ <section class="panel" aria-labelledby="zones-title"><div class="section-head"><div><div class="eyebrow muted">ΒΗΜΑ 02</div><h2 id="zones-title">Ενδεικτικές προπονητικές ζώνες</h2><p>Οι ρυθμοί ενημερώνονται από το τελευταίο καταχωρισμένο τεστ, με τους αρχικούς υπολογισμούς της εφαρμογής.</p></div></div><div id="zones-table" class="table-scroller"></div><div class="method">Οι ζώνες είναι υπολογιστικές εκτιμήσεις, όχι μέτρηση γαλακτικού. Το κατώφλι ελέγχεται επίσης από την αναπνοή και την αίσθηση. Οι γρήγορες επαναλήψεις δεν είναι μέγιστα σπριντ.</div></section>
+ <section class="panel" aria-labelledby="tests-title"><div class="section-head"><div><div class="eyebrow muted">ΒΗΜΑ 03</div><h2 id="tests-title">Τεστ & επαναπροσδιορισμός</h2><p>Κάθε νέο αποτέλεσμα ρυθμίζει μόνο τις συνεδρίες από την ημερομηνία του και μετά. Οι προηγούμενες χρησιμοποιούν την τότε καταχωρισμένη επίδοση.</p></div></div><div id="checkpoints" class="checkpoint-list"></div><div class="method">Τα τεστ αντικαθιστούν την έντονη προπόνηση της ημέρας· δεν προστίθενται πάνω σε αυτή. Αν είσαι κουρασμένος, μπορείς να τα παραλείψεις και να κρατήσεις την τελευταία έγκυρη εκτίμηση.</div></section>
+ <section class="panel plan-panel" aria-labelledby="plan-title"><div class="section-head"><div><div class="eyebrow muted">ΒΗΜΑ 04</div><h2 id="plan-title">Ημερολόγιο προπόνησης</h2><p>Ημέρα προς ημέρα · πρωινές και απογευματινές συνεδρίες · όλοι οι όγκοι σε μέτρα ή χιλιόμετρα.</p></div><div class="right-actions"><button class="btn secondary" id="print-btn">Εκτύπωση / PDF</button><button class="btn secondary" id="csv-btn">Εξαγωγή CSV</button></div></div>
+  <div class="toolbar"><button id="prevweek" class="square-btn" aria-label="Προηγούμενη εβδομάδα">‹</button><label class="toolbar-select">Εβδομάδα <select id="week-select"></select></label><button id="nextweek" class="square-btn" aria-label="Επόμενη εβδομάδα">›</button><label class="checkline"><input id="all-weeks" type="checkbox"> Προβολή όλων των εβδομάδων</label></div>
+  <div id="week-container"></div>
+  <div class="legend"><strong>Σημειώσεις:</strong> Όλοι οι χρόνοι δίπλα στις επαναλήψεις είναι ενδεικτικά εύρη. Τα διαλείμματα ορίζονται ως απόσταση χαλαρού τρεξίματος. Η προθέρμανση, η αποθεραπεία και τα διαλείμματα περιλαμβάνονται στα συνολικά χιλιόμετρα. Μπορείς να αυξομειώσεις επαναλήψεις με τα κουμπιά ± και να σημειώνεις τι ολοκλήρωσες. Όταν η επιβάρυνση ξεπερνά τον στόχο, εμφανίζεται προειδοποίηση.</div>
+ </section>
+ <footer>3K RUN LAB · Εκπαιδευτικός, επεξεργάσιμος σχεδιασμός · δεδομένα αποθηκεύονται μόνο στη συγκεκριμένη συσκευή (localStorage) · <a href="https://github.com/GeorgiosChatzigiannis/test-cooper" target="_blank" rel="noopener noreferrer">πηγαίος κώδικας Cooper</a></footer>
+</main>
+<script>
+'use strict';
+/* 3K RUN LAB — Offline planner. Calculation constants from
+   GeorgiosChatzigiannis/test-cooper, cooper 1.0.1.htm (original generated Excel JS).
+   Original Cooper -> race prediction Riegel 1.06. Original 5K -> VDOT and zones. */
+const START = new Date(Date.UTC(2026,10,30,12)); // Monday preceding Dec 1
+const TOTAL_WEEKS = 23;
+const WEEK_TARGETS = [35,43,52,60,66,72,77,82,71,87,92,97,78,101,106,111,90,115,86,118,104,80,54];
+const WEEK_THEMES = [
+ 'Εισαγωγή και αρχικό Cooper','Προσαρμογή στο τρέξιμο','Πρώτα ελεγχόμενα κομμάτια','Σταθερή αερόβια δουλειά','Ελεγχόμενο τεστ 3.000 μ.',
+ 'Ενίσχυση κατωφλίου','Πρώτη δυνητική διπλή ημέρα','Σταδιακή αύξηση','Τεστ 3.000 μ. και αποφόρτιση','Ανάπτυξη αερόβιας ικανότητας',
+ 'Αύξηση ειδικών διαστημάτων','Πρώτη δυνητική δεύτερη διπλή','Τεστ 1.000 μ. και αποφόρτιση','Εξειδίκευση στα 3.000 μ.',
+ 'Ανάπτυξη ειδικής αντοχής','Μεγαλύτερα αγωνιστικά κομμάτια','Τεστ 3.000 μ. και αποφόρτιση','Κύρια εβδομάδα ειδικής επιβάρυνσης',
+ 'Τεστ 2.000 μ. και μειωμένος όγκος','Τελευταία δυνατή εβδομάδα','Εξισορρόπηση ποιότητας','Taper: λιγότερος όγκος, λίγη ένταση','Εβδομάδα αγώνα — φρεσκάρισμα'
+];
+const DAYS=['Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο','Κυριακή'];
+const TESTS=[
+ {id:'initial',week:1,day:1,dist:0,label:'Αρχικό Cooper 12′',date:'2026-12-01'},
+ {id:'jan3k',week:5,day:5,dist:3000,label:'Τεστ 3.000 μ.',date:'2027-01-02'},
+ {id:'feb3k',week:9,day:5,dist:3000,label:'Τεστ 3.000 μ.',date:'2027-01-30'},
+ {id:'feb1k',week:13,day:5,dist:1000,label:'Τεστ 1.000 μ.',date:'2027-02-27'},
+ {id:'mar3k',week:17,day:5,dist:3000,label:'Τεστ 3.000 μ.',date:'2027-03-27'},
+ {id:'apr2k',week:19,day:5,dist:2000,label:'Τεστ 2.000 μ.',date:'2027-04-10'}
+];
+const ZONE_INFO=[
+ ['easy','Εύκολο / αποκατάσταση','Από τον αρχικό πίνακα «Easy run»'],
+ ['threshold','LT / κατώφλι','Από τον αρχικό πίνακα «LT run» (8–20 χλμ.)'],
+ ['tempo','Tempo intervals','Από τον αρχικό πίνακα tempo intervals'],
+ ['vo2','VO₂max intervals','Από τον αρχικό πίνακα VO₂max'],
+ ['speed','Speed form','Ακριβές εύρος ανά απόσταση: 100–600 μ.'],
+ ['race3k','3.000 μ. τρέχον','Εκτιμώμενος αγωνιστικός ρυθμός 3.000 μ.']
+];
+const STORE_KEY='3k-lab-v1';
+let state={mode:'cooper',source:null,results:{},repOverrides:{},done:{},weekTargets:{},week:1,all:false};
+try{const stored=JSON.parse(localStorage.getItem(STORE_KEY)||'null');if(stored&&typeof stored==='object'){
+ state={...state,...stored};
+ for(const key of ['results','repOverrides','done','weekTargets']) if(!state[key]||typeof state[key]!=='object'||Array.isArray(state[key]))state[key]={};
+ if(!['cooper','race'].includes(state.mode))state.mode='cooper';
+ if(!Number.isInteger(state.week)||state.week<1||state.week>TOTAL_WEEKS)state.week=1;
+ state.all=!!state.all;
+}}catch(e){}
+function targetFor(w){const x=Number(state.weekTargets?.[w]);return Number.isFinite(x)&&x>=25&&x<=120?x:WEEK_TARGETS[w-1]}
+function save(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state))}catch(e){}}
+function $(id){return document.getElementById(id)}
+function dayDate(week, day){const d=new Date(START);d.setUTCDate(d.getUTCDate()+(week-1)*7+day);return d}
+function isoDate(d){return d.toISOString().slice(0,10)}
+function fmtDate(d){return new Intl.DateTimeFormat('el-GR',{timeZone:'UTC',day:'numeric',month:'short'}).format(d)}
+function fmtN(x,digits=1){return new Intl.NumberFormat('el-GR',{maximumFractionDigits:digits,minimumFractionDigits:digits}).format(x)}
+function formatSec(seconds, allowHours=false){if(!Number.isFinite(seconds)||seconds<=0)return '—';let n=Math.round(seconds);const h=Math.floor(n/3600);n%=3600;const m=Math.floor(n/60),s=n%60;if(allowHours&&h)return `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;return `${h?`${h*60+m}`:m}:${String(s).padStart(2,'0')}`}
+function readTime(s){s=String(s||'').trim().replace(/\s+/g,'');if(!/^[0-9]+(?::[0-9]{1,2}){1,2}$/.test(s))return NaN;const a=s.split(':').map(Number);if(a.slice(1).some(x=>x>59))return NaN;return a.reduce((v,n)=>v*60+n,0)}
+function round(x,p=1){const f=10**p;return Math.round((x+Number.EPSILON)*f)/f}
+function rep(d,amount,zone='threshold',recover=200,name='',wu=2,cd=1.5){return {kind:'interval',reps:d,dist:amount,zone,recover,name,wu,cd}}
+function jog(km,title='Εύκολο τρέξιμο',zone='easy'){return {kind:'easy',km:round(km),title,zone}}
+function assessment(test){return {kind:'test',testId:test.id,dist:test.dist,wu:2,cd:1.5}}
+function race(){return {kind:'race',dist:3000,wu:2,cd:1.5}}
+function rest(){return {kind:'rest'}}
+function buildBase(week){
+ const w=week, ds=Array.from({length:7},()=>[]);
+ function add(day,session,side='Πρωί'){ds[day].push({...session,side,key:`${w}-${day}-${ds[day].length}`})}
+ const test=TESTS.find(t=>t.week===w);
+ if(w===1){add(1,assessment(TESTS[0]));add(3,rep(4,400,'tempo',200,'Ελεγχόμενη μετάβαση',1.5,1.5));add(5,rep(6,100,'speed',200,'Ανοίγματα',1.5,1));}
+ else if(w===2){add(1,rep(6,200,'tempo',200,'Σταδιακή εισαγωγή',1.5,1.5));add(3,rep(5,400,'threshold',200,'Ελεγχόμενα κομμάτια',2,1.5));add(5,rep(6,100,'speed',200,'Χαλαρά γρήγορα',1.5,1));}
+ else if(w===23){add(1,rep(3,300,'race3k',400,'Αγωνιστική αίσθηση',2,1.5));add(3,rep(3,150,'speed',250,'Ανοίγματα / φρεσκάρισμα',2,1.5));add(5,rest());add(6,race())}
+ else{
+  let am,pm=null,th,thPm=null,sat;
+  const tues={
+ 3:[4,600],4:[5,600],5:[3,800],6:[4,1000],7:[5,1000],8:[4,1200],9:[3,1000],10:[5,1000],11:[5,1200],12:[5,1000],13:[3,800],14:[4,1200],15:[5,1000],16:[4,1400],17:[3,1000],18:[5,1200],19:[3,1000],20:[5,1200],21:[4,1000],22:[3,800]};
+  const thurs={
+ 3:[4,800],4:[4,1000],5:[3,1000],6:[4,1000],7:[4,1000],8:[4,1200],9:[3,800],10:[4,1200],11:[5,1000],12:[4,1400],13:[3,800],14:[4,1200],15:[4,1400],16:[5,1200],17:[3,800],18:[5,1200],19:[3,800],20:[4,1200],21:[4,1000],22:[3,600]};
+  const sats={
+ 3:[6,150,'speed'],4:[8,200,'speed'],5:[6,200,'speed'],6:[6,200,'speed'],7:[7,200,'speed'],8:[6,300,'speed'],9:[6,200,'speed'],10:[6,300,'speed'],11:[5,400,'vo2'],12:[4,600,'vo2'],13:[6,150,'speed'],14:[6,400,'race3k'],15:[5,600,'race3k'],16:[3,800,'race3k'],17:[6,200,'speed'],18:[3,1000,'race3k'],19:[5,200,'speed'],20:[4,800,'race3k'],21:[3,600,'race3k'],22:[4,300,'race3k']};
+  am=tues[w];th=thurs[w];sat=sats[w];
+  add(1,rep(am[0],am[1],w<5?'tempo':'threshold',200,'Κατώφλι — πρωινή',2,1.5));
+  if(w>=7 && ![9,13,17,19,21,22].includes(w)){const x=(w>=14)?[8,400]:[6,400];pm=rep(x[0],x[1],'threshold',200,'Δεύτερο κατώφλι — προαιρετικό',1.5,1.0);add(1,pm,'Απόγευμα')}
+  add(3,rep(th[0],th[1],'threshold',200,'Κατώφλι — ελεγχόμενη ένταση',2,1.5));
+  if(w>=12 && w<=18 && ![13,17].includes(w)){thPm=rep(6,300,'threshold',150,'Δεύτερη διπλή — προαιρετική',1.5,1);add(3,thPm,'Απόγευμα')}
+  if(test)add(5,assessment(test));else add(5,rep(sat[0],sat[1],sat[2],sat[2]==='speed'?250:400,'Ταχύτητα / ειδική αντοχή',2,1.5));
+ }
+ // Long run on Sunday; the race replaces it in week 23.
+ if(w!==23){let long=w===1?8:w===2?10:w===3?11:w<6?12:w<10?13:w<14?14:w<20?16:14;add(6,jog(long,'Μεγαλύτερο εύκολο τρέξιμο'))}
+ // First Monday is Nov 30, not a training day.
+ if(w===1)add(0,rest());
+ const current=ds.flat().reduce((a,s)=>a+sessionKm(s,false),0);
+ let balance=round(targetFor(w)-current);
+ const easyDays=w===1?[2,4]:[0,2,4];
+ // Prefer easy single runs; above 15 km, split volume into a second easy run.
+ const quota=easyDays.map((day)=>({day,km:0,pm:0}));
+ if(balance>0){
+   const possible=Math.min(balance,15*quota.length);
+   const weights=quota.map(q=>q.day===2?1.06:q.day===4?.96:1);
+   const ws=weights.reduce((a,b)=>a+b,0);
+   let assigned=0;
+   quota.forEach((q,i)=>{q.km=Math.min(w===23&&q.day===4?6:15,round(possible*weights[i]/ws));assigned+=q.km});
+   let left=round(balance-assigned);
+   for(const q of quota){if(left<=0)break;let t=Math.min((w===23&&q.day===4?6:15)-q.km,left);q.km=round(q.km+t);left=round(left-t)}
+   for(const q of quota){if(left<=0)break;let t=Math.min(9,left);q.pm=round(t);left=round(left-t)}
+   // If unusual volume is still left, distribute again across easy PM slots.
+   if(left>0){for(const q of quota){if(left<=0)break;q.pm=round(q.pm+Math.min(left,7));left=round(left-Math.min(left,7))}}
+ }
+ quota.forEach(q=>{if(q.km>.05)add(q.day,jog(q.km));if(q.pm>.05)add(q.day,jog(q.pm,'Δεύτερο χαλαρό τρέξιμο'),'Απόγευμα')});
+ // Sort mornings before afternoons, stable within each day.
+ ds.forEach(day=>day.sort((a,b)=>Number(a.side==='Απόγευμα')-Number(b.side==='Απόγευμα')));
+ return ds;
+}
+function repCount(s,adjust=true){if(s.kind!=='interval')return 0;return adjust?Math.max(1,s.reps+(Number(state.repOverrides[s.key])||0)):s.reps}
+function sessionKm(s,withAdjust=true){if(s.kind==='rest')return 0;if(s.kind==='easy')return s.km;if(s.kind==='interval'){const n=repCount(s,withAdjust);return (s.wu*1000+n*s.dist+Math.max(0,n-1)*s.recover+s.cd*1000)/1000}if(s.kind==='race')return s.wu+3+s.cd;if(s.kind==='test'){const t=TESTS.find(t=>t.id===s.testId);let d=(t?.dist||3000)/1000;if(t?.id==='initial'&&state.source?.mode==='cooper')d=state.source.meters/1000;return s.wu+s.cd+d}return 0}
+function getSourceFor(date){const all=[];if(state.source){all.push({...state.source,date:'2026-11-30'})}for(const t of TESTS.filter(t=>t.id!=='initial')){if(state.results[t.id])all.push({mode:'race',distance:t.dist,seconds:state.results[t.id],date:t.date})}all.sort((a,b)=>a.date.localeCompare(b.date));return all.filter(a=>a.date<=date).slice(-1)[0]||null}
+function calculate(source){if(!source)return null;const t5=source.mode==='cooper'?720*Math.pow(5000/source.meters,1.06):source.seconds*Math.pow(5000/source.distance,1.06);
+ if(!(t5>0))return null;
+ const t5min=t5/60,vm=5000/t5min;
+ const endurance=0.8+0.1894393*Math.exp(-0.012778*t5min)+0.2989558*Math.exp(-0.1932605*t5min);
+ const vdot=round((-4.6+0.182258*vm+0.000104*vm*vm)/endurance,1);
+ const paceV=(pct)=>{const x=vdot*pct;const velocity=29.54+5.000663*x-0.007546*x*x;return velocity>0?60000/velocity:NaN};
+ const raceT=(metres)=>t5*Math.pow(metres/5000,metres<=1500?1.08:metres===2000?1.07:1.06);
+ const raceP=(metres)=>raceT(metres)/metres*1000;
+ // Exact original workbook 5K -> marathon conversion uses miles shown below, not rounded metric distance.
+ const maraTime=t5*Math.pow(26.21875/3.10685596,1.06);
+ const maraPace=maraTime/(26.21875*1609.344)*1000;
+ const easyUpper=paceV(0.59+0.41*(0.7-0.65)/0.35);
+ const easyFaster=paceV(0.59+0.41*(0.75-0.65)/0.35)+(maraPace-paceV(0.59+0.41*(0.75-0.65)/0.35))*0.6667;
+ const pace88=paceV(.88), eight=raceP(8000),twenty=raceP(20000);
+ const ordered=(a,b)=>[Math.min(a,b),Math.max(a,b)];
+ return {t5,t3:raceT(3000),vdot,originalPace:{p88:pace88,byDistance:Object.fromEntries([100,200,400,800,1000,1500,2000,3000,5000,7000,8000,10000,12000,20000].map(d=>[d,raceP(d)]))},zones:{
+  easy:ordered(easyFaster,easyUpper),threshold:ordered(eight,twenty),tempo:ordered(pace88,eight),vo2:ordered(raceP(3000),raceP(5000)),speed:ordered(raceP(1000),raceP(2000)),race3k:[raceP(3000),raceP(3000)]
+ }};
+}
+function paceRange(calc,zone){if(!calc)return '—';const z=calc.zones[zone];if(!z)return '—';if(zone==='speed')return 'Διαφέρει ανά επανάληψη';return z[1]-z[0]<.5?`${formatSec(z[0])}/χλμ.`:`${formatSec(z[0])} – ${formatSec(z[1])}/χλμ.`}
+function splitRange(calc,zone,d){
+ if(!calc)return 'Καταχώρισε τεστ για ενδεικτικό χρόνο';
+ let z=calc.zones[zone];if(!z)return '—';
+ const p=calc.originalPace.byDistance;
+ if(zone==='speed'){
+  // Faithful to the original Cooper sheet's distance-dependent Speed form table.
+  if(d<=100)z=[p[100],p[400]];
+  else if(d<=150)z=[p[100],p[800]];
+  else if(d<=200)z=[p[200],p[1000]];
+  else if(d<=500)z=[p[800],p[2000]];
+  else z=[p[1000],p[2000]];
+ }
+ if(zone==='vo2'){
+  if(d>=1800)z=[p[3000],p[10000]];
+  else if(d>=1400)z=[p[3000],p[8000]];
+  else if(d>=1100)z=[p[3000],p[7000]];
+  else if(d>=900)z=[p[3000],p[5000]];
+  else z=[p[2000],p[5000]];
+ }
+ const a=formatSec(Math.min(...z)*d/1000),b=formatSec(Math.max(...z)*d/1000);
+ return `${a}${a===b?'':` – ${b}`} / ${d} μ.`;
+}
+function htmlEscape(v){return String(v).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))}
+function showMsg(str,good=false){$('input-msg').textContent=str;$('input-msg').classList.toggle('ok',good)}
+function renderSource(){const isCooper=state.mode!=='race';$('mode-cooper').classList.toggle('active',isCooper);$('mode-race').classList.toggle('active',!isCooper);$('mode-cooper').setAttribute('aria-selected',String(isCooper));$('mode-race').setAttribute('aria-selected',String(!isCooper));$('cooper-fields').classList.toggle('hidden',!isCooper);$('race-fields').classList.toggle('hidden',isCooper);
+ if(state.source){if(state.source.mode==='cooper')$('cooper-meters').value=state.source.meters;else{$('race-distance').value=state.source.distance;$('race-time').value=formatSec(state.source.seconds,true)}}}
+function renderResults(){const c=calculate(getSourceFor('2027-05-09'));$('est-3k').textContent=c?formatSec(c.t3):'—';$('est-5k').textContent=c?formatSec(c.t5,true):'—';$('est-vdot').textContent=c?fmtN(c.vdot):'—';const rows=ZONE_INFO.map(([id,name,subtitle])=>`<tr><td><strong>${name}</strong><br><small style="color:#7c8ba0">${subtitle}</small></td><td><span class="tag ${id==='easy'?'easy':id==='speed'?'speed':id==='threshold'?'threshold':''}">${paceRange(c,id)}</span></td></tr>`).join('');$('zones-table').innerHTML=`<table><thead><tr><th>Ζώνη / μέθοδος</th><th>Ενδεικτικός ρυθμός</th></tr></thead><tbody>${rows}</tbody></table>`}
+function renderCheckpoints(){const html=TESTS.filter(t=>t.id!=='initial').map(t=>{const val=state.results[t.id];const sample=t.dist===1000?'3:35':t.dist===2000?'7:30':'11:30';const date=fmtDate(new Date(`${t.date}T12:00:00Z`));return `<div class="checkpoint"><h3>${t.label}</h3><div class="subtitle">Εβδομάδα ${t.week} · ${date} · στη θέση της έντονης συνεδρίας</div><div class="test-edit"><label>Χρόνος (mm:ss)<input data-test-input="${t.id}" value="${val?formatSec(val,true):''}" placeholder="π.χ. ${sample}"></label><button class="btn secondary" data-save-test="${t.id}">Αποθήκευση</button></div>${val?`<div class="setmark">✓ Αποθηκεύτηκε: ${formatSec(val,true)} <button class="btn link-button" data-delete-test="${t.id}" style="padding:2px 5px">Διαγραφή</button></div>`:''}</div>`}).join('');$('checkpoints').innerHTML=html;}
+function workoutText(s,calc){
+ if(s.kind==='rest')return {main:'Ανάπαυση / περπάτημα',sub:'Χωρίς προγραμματισμένη επιβάρυνση.',tag:'easy',label:'ΡΕΠΟ'};
+ if(s.kind==='easy')return {main:`${fmtN(s.km)} χλμ. ${s.title.toLowerCase()}`,sub:`Εύκολη ένταση · ${paceRange(calc,'easy')}`,tag:'easy',label:'EASY'};
+ if(s.kind==='race')return {main:'Ιπποκράτειος — 3.000 μ.',sub:`2 χλμ. ζέσταμα + 3.000 μ. αγώνας + 1,5 χλμ. αποθεραπεία · Αγωνιστικός στόχος 9:59`,tag:'test',label:'ΑΓΩΝΑΣ'};
+ if(s.kind==='test'){const t=TESTS.find(t=>t.id===s.testId);const testName=t.id==='initial'?'Τεστ Cooper — απόσταση σε 12′':`Τεστ ${fmtN(t.dist/1000)} χλμ.`;const dist=t.id==='initial'&&state.source?.mode==='cooper'?`${state.source.meters} μ. μετρημένα`:'3.000 μ. ενδεικτικά για τον υπολογισμό όγκου';return {main:testName,sub:`${fmtN(s.wu)} χλμ. ζέσταμα + ${t.id==='initial'?dist:`${t.dist} μ. τεστ`} + ${fmtN(s.cd)} χλμ. αποθεραπεία · Όχι πρόσθετο workout`,tag:'test',label:'ΤΕΣΤ'}}
+ const n=repCount(s),time=splitRange(calc,s.zone,s.dist),z=ZONE_INFO.find(x=>x[0]===s.zone)?.[1]||'';
+ return {main:`${n} × ${s.dist} μ. · ${s.name}`,sub:`${z} · <b>${htmlEscape(time)}</b> · ${s.recover} μ. χαλαρά ανάμεσα · ${fmtN(s.wu)} χλμ. ζέσταμα + ${fmtN(s.cd)} χλμ. αποθεραπεία`,tag:s.zone==='speed'?'speed':s.zone==='threshold'?'threshold':s.zone==='race3k'?'test':'',label:s.zone==='threshold'?'LT':s.zone==='tempo'?'TEMPO':s.zone==='speed'?'SPEED':s.zone==='vo2'?'VO₂':'3K'};
+}
+function renderWeek(w){const ds=buildBase(w),start=dayDate(w,0),end=dayDate(w,6);
+ let total=0,kmQuality=0,kmEasy=0;ds.forEach(day=>day.forEach(s=>{total+=sessionKm(s);if(s.kind==='interval')kmQuality+=repCount(s)*s.dist/1000;else if(s.kind==='easy')kmEasy+=sessionKm(s)}));
+ const warning=total>120.00001?'Πάνω από το μέγιστο 120 χλμ.':total>targetFor(w)+.5?'Πάνω από τον σχεδιασμό':total<70?'Εισαγωγή / αποφόρτιση':'Στο εβδομαδιαίο πλαίσιο';
+ const warn=total>targetFor(w)+.5||total>120;
+ const notes=w<=6?'Φάση εισαγωγής: δεν επιβάλλουμε 70 χλμ. πριν αποκτηθεί σταθερή βάση.':w===23?'Προτεραιότητα στη φρεσκάδα, όχι στη συμπλήρωση χιλιομέτρων.': 'Οι διπλές προπονήσεις γίνονται μόνο με καλή αποκατάσταση. Τα επιπλέον χιλιόμετρα είναι εύκολα.';
+ return `<article class="week-block print-visible"><div class="week-top"><div><h3>Εβδομάδα ${w} · ${htmlEscape(WEEK_THEMES[w-1])}</h3><small>${fmtDate(start)} – ${fmtDate(end)} · <label class="target-picker">Εβδομαδιαίος στόχος <input type="number" data-target-week="${w}" min="${w<=3?30:w===23?35:w<=6?45:70}" max="${w<=3?70:w===23?70:w<=6?100:120}" step="1" value="${targetFor(w)}"> χλμ.</label></small></div><div class="volume-pill"><strong>${fmtN(total)} χλμ.</strong><span>προγραμματισμένα</span><span class="status ${warn?'warn':''}">${warning}</span></div></div><div class="week-notes">${notes}</div><div class="days">${ds.map((sessions,i)=>{
+ const d=dayDate(w,i),dayKm=sessions.reduce((a,s)=>a+sessionKm(s),0),c=calculate(getSourceFor(isoDate(d)));
+ return `<div class="day ${sessions.length&&sessions.every(s=>state.done[s.key])?'day-done':''}"><div class="day-date"><strong>${DAYS[i]}</strong><small>${fmtDate(d)}</small></div><div class="day-sessions">${sessions.map(s=>{const x=workoutText(s,c),active=s.kind==='interval';return `<div class="session"><div class="session-body"><div class="session-line"><span class="tag ${x.tag}">${x.label}</span> ${s.side==='Απόγευμα'?'Απόγευμα: ':''}${x.main}</div><div class="session-sub">${x.sub}</div></div><div class="session-controls">${active?`<button data-rep="${s.key}" data-change="-1" aria-label="Μείωση επαναλήψεων">−</button><span class="reps">${repCount(s)}</span><button data-rep="${s.key}" data-change="1" aria-label="Αύξηση επαναλήψεων">+</button>`:''}<label class="done"><input type="checkbox" data-done="${s.key}" ${state.done[s.key]?'checked':''}> έγινε</label></div></div>`}).join('')}</div><div class="day-km">${fmtN(dayKm)} χλμ.<small>σύνολο ημέρας</small></div></div>`}).join('')}</div><div class="weekly-breakdown"><span>Γρήγορα/ελεγχόμενα κομμάτια: <b>${fmtN(kmQuality)} χλμ.</b></span><span>Εύκολο συνεχόμενο: <b>${fmtN(kmEasy)} χλμ.</b></span><span>Προθέρμανση, αποκατάσταση και αποθεραπεία περιλαμβάνονται στο σύνολο</span></div></article>`;
+}
+function renderPlan(){const weeks=state.all?Array.from({length:TOTAL_WEEKS},(_,i)=>i+1):[state.week];$('week-container').innerHTML=weeks.map(renderWeek).join('');$('week-select').value=state.week;$('all-weeks').checked=state.all;$('prevweek').disabled=state.week===1;$('nextweek').disabled=state.week===TOTAL_WEEKS}
+function renderAll(){renderSource();renderResults();renderCheckpoints();renderPlan()}
+function setMode(mode){state.mode=mode;save();renderSource()}
+function saveBase(){if(state.mode==='cooper'){const m=Number($('cooper-meters').value);if(!Number.isFinite(m)||m<1000||m>5000){showMsg('Δώσε έγκυρη απόσταση Cooper από 1.000 έως 5.000 μέτρα.');return}state.source={mode:'cooper',meters:m};showMsg('Αποθηκεύτηκε το τεστ Cooper. Ενημερώθηκαν αυτόματα οι ρυθμοί.',true)}else{const distance=Number($('race-distance').value),seconds=readTime($('race-time').value);if(!Number.isFinite(seconds)||seconds<=0||seconds<distance/15||seconds>distance*3){showMsg('Δώσε έγκυρο χρόνο, π.χ. 12:00, 37:30 ή 1:25:00.');return}state.source={mode:'race',distance,seconds};showMsg('Αποθηκεύτηκε η πρόσφατη επίδοση και ενημερώθηκε το πλάνο.',true)}save();renderAll()}
+function saveTest(id){const t=TESTS.find(t=>t.id===id);if(!t)return;const inp=document.querySelector(`[data-test-input="${id}"]`);const seconds=readTime(inp?.value);if(!Number.isFinite(seconds)||seconds<=0||seconds<t.dist/15||seconds>t.dist*3){showMsg('Δεν αποθηκεύτηκε το τεστ: δώσε έγκυρο χρόνο (mm:ss ή hh:mm:ss).');inp?.focus();return}state.results[id]=seconds;save();renderAll();showMsg(`Αποθηκεύτηκε το ${t.label}: ${formatSec(seconds,true)}. Οι επόμενες προπονήσεις προσαρμόστηκαν.`,true)}
+function exportCsv(){const rows=[['Εβδομάδα','Ημερομηνία','Ημέρα','Ώρα','Προπόνηση','Ζώνη','Επαναλήψεις','Μέτρα ανά επανάληψη','Μέτρα ανά διάλειμμα','Χρόνος επανάληψης','Σύνολο χλμ.','Ολοκληρώθηκε']];for(let w=1;w<=TOTAL_WEEKS;w++)buildBase(w).forEach((sessions,d)=>{const date=isoDate(dayDate(w,d)),calc=calculate(getSourceFor(date));sessions.forEach(s=>{const work=workoutText(s,calc);rows.push([w,date,DAYS[d],s.side,work.main.replace(/<[^>]*>/g,''),s.zone||s.kind,s.kind==='interval'?repCount(s):'',s.dist||'',s.recover||'',s.kind==='interval'?splitRange(calc,s.zone,s.dist):'',round(sessionKm(s),2),state.done[s.key]?'ΝΑΙ':'ΟΧΙ'])})});const text='\ufeff'+rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(';')).join('\r\n');const blob=new Blob([text],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='3k-run-lab-2026-2027.csv';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function init(){const indicator=$('js-status');if(indicator){indicator.textContent='✓ Η εφαρμογή λειτουργεί — το ημερολόγιο και οι υπολογισμοί είναι ενεργοί.';indicator.classList.add('running')};const select=$('week-select');for(let i=1;i<=TOTAL_WEEKS;i++){const o=document.createElement('option');o.value=i;o.textContent=`${String(i).padStart(2,'0')} · ${fmtDate(dayDate(i,0))} – ${fmtDate(dayDate(i,6))}`;select.append(o)}
+ $('mode-cooper').addEventListener('click',()=>setMode('cooper'));$('mode-race').addEventListener('click',()=>setMode('race'));$('save-base').addEventListener('click',saveBase);
+ $('demo').addEventListener('click',()=>{state.mode='cooper';state.source={mode:'cooper',meters:2800};save();renderAll();showMsg('Η δοκιμή 2.800 μ. εφαρμόστηκε: ενημερώθηκαν οι ζώνες και οι χρόνοι των προπονήσεων.',true)});
+ $('clear-data').addEventListener('click',()=>{if(!confirm('Θέλεις να διαγραφούν τα δεδομένα, τα τεστ και οι σημειώσεις ολοκλήρωσης από αυτή τη συσκευή;'))return;state={mode:'cooper',source:null,results:{},repOverrides:{},done:{},weekTargets:{},week:1,all:false};$('cooper-meters').value='';$('race-time').value='';save();renderAll();showMsg('Καθαρίστηκαν τα τοπικά δεδομένα.',true)});
+ $('week-select').addEventListener('change',e=>{state.week=Number(e.target.value);save();renderPlan()});$('prevweek').addEventListener('click',()=>{state.week=Math.max(1,state.week-1);save();renderPlan()});$('nextweek').addEventListener('click',()=>{state.week=Math.min(TOTAL_WEEKS,state.week+1);save();renderPlan()});$('all-weeks').addEventListener('change',e=>{state.all=e.target.checked;save();renderPlan()});
+ $('checkpoints').addEventListener('click',e=>{const saveBtn=e.target.closest('[data-save-test]'),del=e.target.closest('[data-delete-test]');if(saveBtn)saveTest(saveBtn.dataset.saveTest);if(del){delete state.results[del.dataset.deleteTest];save();renderAll();showMsg('Διαγράφηκε το αποτέλεσμα. Οι επόμενοι ρυθμοί επαναϋπολογίστηκαν.',true)}});
+ $('week-container').addEventListener('click',e=>{const b=e.target.closest('[data-rep]');if(!b)return;const key=b.dataset.rep,delta=Number(b.dataset.change);state.repOverrides[key]=(state.repOverrides[key]||0)+delta;const [w,day]=key.split('-').map(Number);const s=buildBase(w)[day].find(x=>x.key===key);if(s&&repCount(s)<1)state.repOverrides[key]=1-s.reps;save();renderPlan()});
+ $('week-container').addEventListener('change',e=>{if(e.target.matches('[data-target-week]')){const w=Number(e.target.dataset.targetWeek),v=Number(e.target.value);const min=w<=3?30:w===23?35:w<=6?45:70,max=w<=3?70:w===23?70:w<=6?100:120;if(!Number.isFinite(v)||v<min||v>max){alert(`Δώσε στόχο ${min}–${max} χλμ. για αυτή τη φάση.`);renderPlan();return}state.weekTargets[w]=v;save();requestAnimationFrame(renderPlan)}else if(e.target.matches('[data-done]')){state.done[e.target.dataset.done]=e.target.checked;save();renderPlan()}});
+ $('print-btn').addEventListener('click',()=>{const wasAll=state.all;state.all=true;renderPlan();window.print();state.all=wasAll;renderPlan()});$('csv-btn').addEventListener('click',exportCsv);
+ renderAll();
+}
+init();
+
+</script>
+</body>
+</html>
